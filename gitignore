@@ -1,1 +1,21 @@
 # Lists files/folders Git should ignore (e.g., data, temp files)
+
+# R-related files
+*.Rhistory
+*.Rproj
+*.Rproj.user/
+.RData
+.Rhistory
+
+# Tableau-related files
+*.twbx
+*.tfl
+*.tflx
+
+# General temporary files
+*.log
+*.tmp
+*.bak
+
+# Sensitive data
+data/*.csv  # Exclude raw data to avoid accidental sensitive data upload
