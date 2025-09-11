@@ -1,5 +1,3 @@
-# DataAnalysis_Project_FinancialFraudDetection
-
 # Financial Fraud Detection Analysis Project
 
 ## Project Overview
