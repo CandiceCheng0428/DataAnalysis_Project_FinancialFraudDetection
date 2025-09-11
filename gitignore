@@ -1,4 +1,4 @@
-## Lists files/folders Git should ignore (e.g., data, temp files)
+# Lists files/folders Git should ignore (e.g., data, temp files)
 
 # R-related files
 *.Rhistory
@@ -18,4 +18,8 @@
 *.bak
 
 # Sensitive data
+<<<<<<< HEAD
 data/*.csv  # Exclude raw data to avoid accidental sensitive data upload
+=======
+data/*.csv  # Exclude raw data to avoid accidental sensitive data upload
+>>>>>>> c08c4b197b8d4391efd031fdeaa8c031fa4c39e9
