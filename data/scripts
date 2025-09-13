@@ -1,1 +1,32 @@
 # R/RStudio scripts, SQL queries, etc.
+
+#Download packages
+installed.packages("tidyverse")
+installed.packages("knitr")
+
+# Load libraries
+library(tidyverse)
+library(knitr)
+
+# Read metadata CSV
+metadata <- read_csv("DataAnalysis_Project_FinancialFraudDetection/data/doc/Fraud_Analysis_Metadata.csv")
+
+# Convert to Markdown table
+md_table <- kable(metadata, format = "markdown")
+
+# Write to datasets_metadata.md
+write_lines(
+  c(
+    "# Datasets Metadata",
+    "",
+    "## Overview",
+    "This file documents the metadata for datasets used in the Financial Fraud Detection Analysis project.",
+    "",
+    "## Metadata Table",
+    md_table,
+    "",
+    "## Google Spreadsheet Link",
+    "[Fraud_Analysis_Metadata](insert-google-sheet-public-link-here) (Public view-only link for real-time updates)"
+  ),
+  "DataAnalysis_Project_FinancialFraudDetection/data/doc/datasets_metadata.md"
+)
